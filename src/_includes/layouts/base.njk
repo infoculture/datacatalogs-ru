@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% include "meta.njk" %}
+        <link rel="icon" type="image/x-icon" href="/images/logo.png">
+        <title>{{ title }}</title>
+        {% include "styles.njk" %}
+        <script>
+            const catalogs = {{all | dump | safe}};
+            const facets =  {
+                owners: {{owners | dump | safe}},
+                systems: {{systems | dump | safe}},
+                regions: {{regions | dump | safe}},
+                types: {{types | dump | safe}},
+                topics: {{topics | dump | safe}},
+                contents: {{contents | dump | safe}},
+                countries: {{countries | dump | safe}},
+            };
+        </script>
+        <script src="/scripts/helpers.js"></script>
+        <script src="/scripts/search.js"></script>
+        <script src="/scripts/adaptive.js"></script>
+    </head>
+    <body>
+        {% include "partials/header.njk" %}
+        <main>
+            <div class="container-main">
+            {% block content %}{% endblock %}
+            </div>
+        </main>
+        {% include "partials/footer.njk" %}
+    </body>
+</html>

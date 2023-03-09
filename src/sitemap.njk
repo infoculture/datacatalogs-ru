@@ -1,0 +1,24 @@
+---
+permalink: sitemap.xml
+eleventyExcludeFromCollections: true
+---
+{% set absoluteUrl = 'http://www.' + helpers.domain %}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{absoluteUrl }}</loc>
+  </url>
+  <url>
+    <loc>{{ absoluteUrl }}/about/</loc>
+  </url>
+  <url>
+    <loc>{{ absoluteUrl }}/add-resource</loc>
+  </url>
+{% for item in all %}
+    <url>
+      <loc>{{ absoluteUrl }}/items/{{item.id}}</loc>
+      <lastmod>{{ item.add_date }}</lastmod>
+    </url>
+{% endfor %}
+
+</urlset>

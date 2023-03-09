@@ -1,0 +1,56 @@
+footer {
+  margin: 2rem 0;
+  color: #fff;
+}
+footer .wrapper {
+  background: #000;
+  border-radius: 2rem;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+footer .wrapper .logo{
+  display: flex;
+}
+
+footer .wrapper .content {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Rubik';
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 1;
+  line-height: 1.5rem;
+}
+footer .wrapper .content .social-icon {
+  width: 1rem;
+  color: #fff;
+  margin: 0 0.5rem;
+}
+footer .wrapper .actions {
+  display: flex;
+}
+footer .wrapper .actions .scroll-up {
+  background: transparent;
+  cursor: pointer;
+}
+
+
+#copyright-container {
+  width: 100%;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#link-copyright {
+  text-align: right;
+  float: right;
+}

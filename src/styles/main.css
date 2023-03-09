@@ -1,0 +1,474 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('/fonts/rubik/rubik-all-300-normal.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/fonts/rubik/rubik-all-400-normal.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url('/fonts/rubik/rubik-all-500-normal.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url('/fonts/rubik/rubik-all-600-normal.woff') format('woff');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+}
+body::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  filter: blur(35px);
+  background-image: radial-gradient(#bfeba0 34%, transparent 0),
+    radial-gradient(#bfebae 25%, transparent 0),
+    radial-gradient(#beeba0 40%, transparent 0),
+    radial-gradient(#beeaa0 55%, transparent 0),
+    radial-gradient(#bfebae 20%, transparent 0),
+    radial-gradient(#beeaa0 29%, transparent 0),
+    radial-gradient(#bfebae 20%, transparent 0),
+    radial-gradient(#bfebae 20%, transparent 0);
+  background-size: 105vmin 80vmin;
+  background-position: 166% 20%, -60% 180%, -40% -4%, -50% -144%, 160% 160%,
+    35% -180%, 157% 88%, 161% 3%;
+  background-repeat: no-repeat no-repeat;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0.5rem;
+}
+
+.add-elem {
+  color: #fff;
+  background: #7710d2;
+  display: block;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Rubik';
+}
+.add-elem:hover {
+  text-decoration: none;
+}
+.logo-name {
+  font-family: 'Rubik';
+  color: #000000;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+h2.title-text {
+  font-family: 'Rubik';
+  color: #240240;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.25;
+  margin-top: 4.5rem;
+}
+.text {
+  font-family: 'Rubik';
+  color: #000;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-top: 1.25rem;
+  letter-spacing: 0px;
+}
+.text-home {
+  font-family: 'Rubik';
+  color: #000;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: auto;
+  font-family: 'Rubik';
+}
+main section p{
+  margin-bottom: 1rem;
+}
+
+#search {
+  height: 4rem;
+  width: 100%;
+  outline-offset: unset;
+  outline: none;
+  padding: 1rem;
+  background: #fff
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='22'  viewBox='0 0 22 22'%3E%3Cpath d='M20.5312 18.8438L15.8438 14.1562C16.8984 12.5938 17.4453 10.6406 17.1719 8.53125C16.6641 4.9375 13.7344 2.04688 10.1797 1.57812C4.86719 0.914062 0.375 5.40625 1.03906 10.7188C1.50781 14.2734 4.39844 17.2031 7.99219 17.7109C10.1016 17.9844 12.0547 17.4375 13.6562 16.3828L18.3047 21.0703C18.9297 21.6562 19.9062 21.6562 20.5312 21.0703C21.1172 20.4453 21.1172 19.4688 20.5312 18.8438ZM4.08594 9.625C4.08594 6.89062 6.3125 4.625 9.08594 4.625C11.8203 4.625 14.0859 6.89062 14.0859 9.625C14.0859 12.3984 11.8203 14.625 9.08594 14.625C6.3125 14.625 4.08594 12.3984 4.08594 9.625Z' %3E%3C/path%3E%3C/svg%3E")
+    no-repeat right center;
+  border: 3px solid #000;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.catalog-name {
+  line-height: 1.5rem;
+}
+
+.catalog-h1 {
+  font-family: 'Rubik';
+  color: #000;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.25;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+  max-width: 850px;
+}
+
+.catalog-button {
+  width: 408px;
+  margin-right: 0.5rem;
+  border-radius: 16px;
+  background-color: #000;
+  padding: 24px;
+  text-align: center;
+  color: #fff;
+  vertical-align: top;
+  margin-top: 1rem;
+}
+
+.catalog-button-a {
+  font-family: 'Rubik';
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.description-items {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  max-width: 850px;
+  line-height: 32px;
+  color: #000;
+}
+
+.items-title {
+  font-family: 'Rubik';
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  max-width: 850px;
+  line-height: 32px;
+  color: #000;
+}
+
+.items-p {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  max-width: 850px;
+  line-height: 32px;
+  color: #000;
+}
+
+.items-img {
+  font-size: 1.25rem;
+  line-height: 32px;
+  width: 32px;
+  vertical-align: top;
+  margin-right: 1rem;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 1rem;
+}
+legend {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0 0 0.5rem 0;
+}
+label .counter {
+  color: #adb9c4;
+  padding: 0 0.5rem;
+}
+
+.logo-footer {
+  text-align: left;
+}
+.img-footer {
+  width: 3rem;
+}
+
+input[type='checkbox'] {
+  position: absolute;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  top: -4px;
+  left: 0;
+}
+
+input[type='checkbox']:checked:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  background-color: #000;
+}
+
+input[type='checkbox']:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  background-color: #fff;
+}
+
+input[type='checkbox']:after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: solid #fff;
+  border-width: 0 0px 0px 0;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0px;
+}
+
+input[type='checkbox']:checked:after {
+  content: url('../images/tick.svg');
+  display: block;
+  color: #fff;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(0);
+  position: absolute;
+  top: 0.4rem;
+  left: 0.3rem;
+}
+label {
+  display: flex;
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  right: calc(100% + 0.5rem);
+  width: 14rem;
+  top: -0.5rem;
+  background: #bfeba0;
+  border: 1px solid #bfeba0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.tooltip:after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -0.5rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #bfeba0;
+}
+.more {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 4px;
+}
+.more::after {
+  content: url('../images/chevron.svg');
+}
+
+.form {
+  display: flex;
+  max-width: 890px;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.label-form {
+  float: left;
+  text-align: left;
+  font-family: 'Rubik';
+  margin-bottom: 0.75rem;
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000;
+  margin-right: 1rem;
+}
+
+.label-input {
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-family: 'Rubik';
+  margin-bottom: 0.75rem;
+}
+
+.input-form {
+  border-color: #000;
+  font-family: 'Rubik';
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  border-width: 2px;
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+select.input-form{
+  -webkit-appearance: none;
+}
+
+.input-textarea {
+  border-color: #000;
+  font-family: 'Rubik';
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  border-width: 2px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  width: 100%;
+  min-height: 150px;
+}
+
+.button-form {
+  background-color: #01A288;
+  font-family: 'Rubik';
+  border-radius: 0.75rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+
+.button {
+  /* width: 100%; */
+  text-align: left;
+}
+
+.add-catalog {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-catalog h2 {
+  color: #000;
+  font-family: 'Rubik';
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-catalog p {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-family: 'Rubik';
+}
+
+.burger-menu,
+.close-menu,
+.filter-menu {
+  display: none;
+}
+.advantages {
+  width: 90%;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border: 2px solid #000;
+  gap: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  font-family: 'Rubik';
+}
+.card h4{
+  margin-bottom: 1rem;
+}
+

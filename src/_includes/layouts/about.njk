@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% include "meta.njk" %}
+        <link rel="icon" type="image/x-icon" href="/images/logo.png">
+        <title>{{ title }}</title>
+        {% include "styles.njk" %}
+        <script src="/scripts/adaptive.js"></script>
+    </head>
+    <body>
+        {% include "partials/header.njk" %}
+        <main>
+          <section>
+          {% block content %}
+              <h1>{{ title }}</h1>
+              {{ content | safe }}
+          {% endblock %}
+          </section>
+        </main>
+        <ul class="advantages">
+        {% for advantage in advantages %}
+            <li class="card col-4">
+                <h4>{{advantage.title}}</h4>
+                <p>{{advantage.description}}</p>
+            </li>
+        {% endfor %}
+        </ul>
+        {% include "partials/footer.njk" %}
+    </body>
+</html>

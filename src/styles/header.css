@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  display: flex;
+  text-decoration: none;
+  width: 10rem;
+}
+header .logo img {
+  height: 4rem;
+}
+header .logo div {
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.35rem;
+  color: #111;
+  padding-left: 0.5rem;
+}
+header .navbar-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+header .navbar-nav a.nav-item {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  padding: 0 1rem;
+  font-family: 'Rubik';
+}
+header .navbar-nav a.nav-item:last-child {
+  background-color: #01A288;
+  color: #fff;
+  border-radius: 1rem;
+}
+header .navbar-nav a.nav-item:hover {
+  text-decoration: underline;
+}

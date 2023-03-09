@@ -1,0 +1,11 @@
+{% for item in all %}
+    <div class="masonry-cell result" id="{{item.id}}">
+        <a href="items/{{item.id}}"  class="masonry-item">
+            <time datetime={{item.add_date}}>{{ item.add_date | humanDate }}</time>
+            <h3 class="catalog-name">
+                {{ item.name }}
+            </h3>
+            <p class="">{{ item.description }}</p>
+        </a>
+    </div>
+{% endfor %}

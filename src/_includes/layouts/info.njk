@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% include "meta.njk" %}
+        <link rel="icon" type="image/x-icon" href="/images/logo.png">
+        <title>{{ title }}</title>
+        {% include "styles.njk" %}
+         <script>
+            const topics =  {{ topics | dump | safe }};
+            const types = {{ types | dump | safe}};
+            const countries = {{ countries | dump | safe}};
+            const contents = {{ contents | dump | safe}};
+            const systems = {{ systems | dump | safe}};
+        </script>
+        <script src="/scripts/adaptive.js"></script>
+    </head>
+    <body>
+        {% include "partials/header.njk" %}
+        <main>
+          {% block content %}
+              <p class="items-p">{{ item.owner_name }}</p>
+              <h1 class="catalog-h1">{{ title }}</h1>
+              {{ content | safe }}
+          {% endblock %}
+          <div>
+           {% include "partials/banner.njk" %}
+           </div>
+        </main>
+        {% include "partials/footer.njk" %}
+    </body>
+</html>

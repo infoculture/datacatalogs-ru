@@ -1,0 +1,9 @@
+.DS_Store
+.env
+.idea/
+.vscode/
+build/
+dist/
+public/
+node_modules/
+.vercel

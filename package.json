@@ -1,0 +1,35 @@
+{
+  "name": "datacatalogs-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SSG for datacatalogs.ru",
+  "scripts": {
+    "dev": "eleventy --watch --serve",
+    "build": "npx @11ty/eleventy --input=src --output=public"
+  },
+  "keywords": [],
+  "author": "Gleb Svechnikov <g.svechnikov@infoculture.ru>",
+  "license": "CC0",
+  "dependencies": {
+    "@11ty/eleventy": "2.0.0",
+    "@11ty/eleventy-img": "2.0.1",
+    "@fontsource/rubik": "4.5.13",
+    "@vidhill/fortawesome-brands-11ty-shortcode": "1.0.2",
+    "airtable": "0.11.6",
+    "dotenv": "16.0.3",
+    "reseter.css": "2.0.0",
+    "text-to-svg-path": "3.1.5"
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "engines": {
+    "node": ">=14",
+    "npm": ">=8"
+  },
+  "devDependencies": {
+    "luxon": "3.3.0"
+  }
+}

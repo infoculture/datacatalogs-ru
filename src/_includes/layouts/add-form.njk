@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <link rel="icon" type="image/x-icon" href="/images/logo.png">
+        <title>{{ title }}</title>
+        {% include "styles.njk" %}
+        <script src="/scripts/adaptive.js"></script>
+    </head>
+    <body >
+        {% include "partials/header.njk" %}
+        <main class="main" >
+            <div class="container-main">
+            {% block content %}{% endblock %}
+            </div>
+        </main>
+        {% include "partials/footer.njk" %}
+    </body>
+</html>

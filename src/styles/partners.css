@@ -1,0 +1,23 @@
+.partners-section{
+    margin-top: 1rem;
+}
+ul.partners{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+li.partner{
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    background-color: #BFEBA0;
+    display: flex;
+    justify-content: center;
+}
+li.partner .logo{
+    height: 2rem;
+}
+@media only screen and (max-width: 480px) {
+    ul.partners{
+        flex-direction: column;
+    }
+}

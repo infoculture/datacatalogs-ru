@@ -1,0 +1,26 @@
+<footer>
+    <div class="wrapper">
+        <div class="logo">
+            <a class="navbar-brand" href="/">
+                <img class="img-footer" src="/images/infoculture-logo.svg" alt="Инфокультура">
+            </a>
+        </div>
+        <div class="content">
+            <div class="copyright">
+                    <img class="img-footer" src="/images/cc-copyleft.svg" alt="CC-BY-SA"/>
+                    , АНО «Инфокультура», Россия, Москва, {{ helpers.getCurrentYear() }} г.
+            </div>
+            <nav class="socials">
+                <a href="https://vk.com/infoculture" target="_blank">{% fortawesomeBrand 'vk', 'social-icon' %}</a>
+                <a href="https://t.me/infoculture"  target="_blank">{% fortawesomeBrand 'telegram', 'social-icon' %}</a>
+                <a href="https://www.youtube.com/c/Infoculture/" target="_blank">{% fortawesomeBrand 'youtube', 'social-icon' %}</a>
+                <a href="https://github.com/infoculture" target="_blank">{% fortawesomeBrand 'github', 'social-icon' %}</a>
+            </nav>
+        </div>
+        <nav class="actions">
+            <button class="scroll-up" type="button" onclick="window.scrollTo(0,0)">
+                <img src="/images/arrow.svg" alt="Вернуться к началу страницы">
+            </button>
+        </nav>
+    </div>
+</footer>
