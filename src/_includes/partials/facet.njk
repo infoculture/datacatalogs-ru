@@ -1,0 +1,88 @@
+<nav class="facet-nav">
+    <form>
+        <fieldset>
+            <legend>Тема</legend>
+            <div id="topics">
+                {% for topic in topics | notEmpty('Name') %}
+                    <label onmouseover="showCalculatedResults(this)" onmouseout="hideCalculatedResults(this)">
+                        <input type="checkbox" id="{{topic.id}}" name="{{topic.id}}" value="{{topic.id}}" onchange='handleParam(this, "topic")'>
+                        {{topic.Name}}
+                        <span class="counter">{{topic.NumRecords}}</span>
+                    </label>
+                {% endfor %}
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Категория</legend>
+            <div id="types">
+                {% for type in types %}
+                    <label for="t-{{type.id}}">
+                        <input type="checkbox" id="t-{{type.id}}" name="{{type.id}}" value="{{type.id}}" onchange='handleParam(this, "type")'>
+                        {{type.Name}}
+                        <span class="counter">{{type.NumRecords}}</span>
+                    </label>
+                {% endfor %}
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>ПО репозитория</legend>
+            <div id="systems">
+                {% for system in systems %}
+                    <label for="s-{{system.id}}">
+                        <input type="checkbox" id="s-{{system.id}}" name="{{system.id}}" value="{{system.id}}" onchange='handleParam(this, "system")'>
+                        {{system.Name}}
+                        <span class="counter">{{system.NumRecords}}</span>
+                    </label>
+                {% endfor %}
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Регион РФ</legend>
+            <div id="regions">
+                {% for region in regions %}
+                    <label for="r-{{region.id}}">
+                        <input type="checkbox" id="r-{{region.id}}" name="{{region.id}}" value="{{region.id}}" onchange='handleParam(this, "region")'>
+                        {{region.Name}}
+                        <span class="counter">{{region.NumRecords}}</span>
+                    </label>
+                {% endfor %}
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Владелец</legend>
+            <div id="owners">
+                {% for owner in owners %}
+                    <label for="o-{{owner.id}}">
+                        <input type="checkbox" id="o-{{owner.id}}" name="{{owner.id}}" value="{{owner.id}}" onchange='handleParam(this, "owner")'>
+                        {{owner.Name}}
+                        <span class="counter">{{owner.NumRecords}}</span>
+                    </label>
+                {% endfor %}
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Тип контента</legend>
+            <div id="contents">
+                {% for content in contents %}
+                    <label for="c-{{content.id}}">
+                        <input type="checkbox" id="c-{{content.id}}" name="{{content.id}}" value="{{content.id}}" onchange='handleParam(this, "content")'>
+                        {{content.Name}}
+                        <span class="counter">{{content.NumRecords}}</span>
+                    </label>
+                {% endfor %}
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Страны</legend>
+            <div id="countries">
+                {% for country in countries %}
+                <label for="С-{{country.id}}">
+                   <input type="checkbox" id="C-{{country.id}}" name="{{country.id}}" value="{{country.id}}" onchange='handleParam(this, "country")'>
+                   {{country.Name}}
+                   <span class="counter">{{country.NumRecords}}</span>
+                </label>
+                {% endfor %}
+            </div>
+        </fieldset>
+    </form>
+</nav>

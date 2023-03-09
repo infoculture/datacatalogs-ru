@@ -1,0 +1,15 @@
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<meta name="keywords" content="{{keywords}}">
+<meta name="description" content="{{description}}">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{description}}">
+<meta property="og:site_name" content="{{url}}">
+<meta name="hostname" content="{{url}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:description" content="{{description}}">
+{% set text = { title: title or helpers.title, owner: owner or 'Инфокультура'} %}
+<meta property="og:image" content="{{ text | createOgImage }}">
+<meta property="twitter:image" content="{{ text | createOgImage }}">

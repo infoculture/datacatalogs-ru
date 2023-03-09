@@ -1,0 +1,74 @@
+@media only screen and (max-width: 600px) {
+  .advantages {
+    flex-direction: column;
+  }
+  header .navbar-nav {
+    display: none;
+    background: white;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 90%;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    height: 100vh;
+  }
+  header .navbar-nav a.nav-item:last-child{
+    background: none;
+    color: #000;
+  }
+  #search{
+    font-size: 1.2rem;
+  }
+  .burger-menu {
+    all: unset;
+    display: flex;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+  .burger-menu:hover{
+    color: #bfeba0;
+  }
+  .close-menu {
+    margin-top: 1rem;
+    all: unset;
+    display: flex;
+    font-size: 4rem;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  .add-banner .wrapper h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .add-banner .wrapper p{
+    font-size: 1rem;
+  }
+  .add-banner .wrapper a.add-source {
+    font-size: 1.2rem;
+  }
+  .flex-container aside{
+    right: 0;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    display: none;
+  }
+  .flex-container aside[data-filter='visible']{
+    display: block;
+  }
+  
+  .filter-menu{
+    all: unset;
+    font-size: 4rem;
+    position: fixed;
+    top: 260px;
+    right: 2rem;
+    cursor: pointer;
+  }
+  .filter-menu:hover{
+    color: #bfeba0;
+  }
+
+}

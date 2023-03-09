@@ -1,0 +1,12 @@
+<section class="partners-section">
+    <h2>Партнеры проекта</h2>
+    <ul class="partners">
+        {% for partner in helpers.partners %}
+            <li class="partner col-3">
+                <a href={{partner.link}} target="_blank">
+                    <img class="logo" src="/images/{{partner.image}}"/>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</section>

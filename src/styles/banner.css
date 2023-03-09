@@ -1,0 +1,35 @@
+.add-banner {
+  display: flex;
+  margin: auto;
+}
+.add-banner .wrapper {
+  font-family: 'Rubik';
+  color: #fff;
+  width: 100%;
+  height: 464px;
+  background-image: url('/images/bg 1.png');
+  background-position: top center;
+  border-radius: 32px;
+  padding: 4rem;
+}
+.add-banner .wrapper h3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.add-banner .wrapper p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.add-banner .wrapper .add-source {
+  color: #000;
+  background-color: #bfeba0;
+  cursor: pointer;
+  font-family: 'Rubik';
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}

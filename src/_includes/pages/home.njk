@@ -1,0 +1,24 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    <div class="">
+        <h2 class="title-text">Ищете данные ?</h2>
+        <p class="text-home">Подберите нужные источники данных под ваши задачи</p>
+    </div>
+    <div class="flex-container">
+        <div class="col-4 sm-12">
+            <input type="search" oninput="onSearch(event)" id="search" placeholder="поиск по источникам данных"/>
+        </div>
+        <div class="col-4">
+            <section class="masonry-root">
+                {% include "partials/items.html" %}
+            </section>
+        </div>
+        <aside class="col-2" data-filter="">
+            {% include "partials/facet.njk" %}
+        </aside>
+        <button type="button" class="filter-menu" onclick="openFilter()">⁞</button>
+    </div>
+    {% include "partials/banner.njk" %}
+    {% include "partials/partners.njk" %}
+{% endblock %}
